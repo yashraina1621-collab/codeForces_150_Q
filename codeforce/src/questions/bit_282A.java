@@ -1,4 +1,4 @@
-package arrays;
+package questions;
 import java.util.Scanner;
 public class bit_282A {
         public static void main(String[] args) {
