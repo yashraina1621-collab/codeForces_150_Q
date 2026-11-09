@@ -9,8 +9,8 @@ public class bit_282A {
 
             int x = 0;
 
-            for (int i = 0; i < n; i++) {
-
+            for (int i = 0; i < n; i++)
+            {
                 String s = sc.next();
 
                 if (s.contains("++")) {
