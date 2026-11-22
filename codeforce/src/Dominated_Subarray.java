@@ -1,5 +1,5 @@
 import java.util.*;
-public class Dominated_Subarray {
+public class Dominated_Subarray{
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 
@@ -7,25 +7,20 @@ public class Dominated_Subarray {
 
             while (t-- > 0) {
                 int n = sc.nextInt();
-                int[] a = new int[n];
 
-                for (int i = 0; i < n; i++) {
-                    a[i] = sc.nextInt();
-                }
+                int[] last = new int[n + 1];
+                Arrays.fill(last, -1);
 
                 int ans = Integer.MAX_VALUE;
 
                 for (int i = 0; i < n; i++) {
+                    int x = sc.nextInt();
 
-                    // Check distance 1
-                    if (i + 1 < n && a[i] == a[i + 1]) {
-                        ans = Math.min(ans, 2);
+                    if (last[x] != -1) {
+                        ans = Math.min(ans, i - last[x] + 1);
                     }
 
-                    // Check distance 2
-                    if (i + 2 < n && a[i] == a[i + 2]) {
-                        ans = Math.min(ans, 3);
-                    }
+                    last[x] = i;
                 }
 
                 System.out.println(ans == Integer.MAX_VALUE ? -1 : ans);
@@ -34,5 +29,4 @@ public class Dominated_Subarray {
 
         }
     }
-
 
