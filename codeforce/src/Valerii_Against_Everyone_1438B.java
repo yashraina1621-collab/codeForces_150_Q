@@ -1,6 +1,7 @@
 import java.util.*;
-public class Berland_Music {
+public class Valerii_Against_Everyone_1438B {
 
+    public class Main {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 
@@ -29,4 +30,4 @@ public class Berland_Music {
         }
     }
 
-
+}
