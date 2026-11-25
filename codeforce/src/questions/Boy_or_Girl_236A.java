@@ -1,3 +1,5 @@
+package questions;
+
 import java.util.*;
 public class Boy_or_Girl_236A {
         public static void main(String[] args) {
