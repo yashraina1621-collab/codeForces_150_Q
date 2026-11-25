@@ -23,7 +23,6 @@ public class chat_room_Problem_58A {
                 System.out.println("NO");
             }
 
-
         }
     }
 
