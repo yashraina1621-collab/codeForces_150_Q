@@ -1,5 +1,5 @@
 import java.util.*;
-public class Medium_Number_1950A {
+public class Medium_Number_1760A {
         public static void main(String[] args) {
 
             Scanner sc = new Scanner(System.in);
